@@ -12,6 +12,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -1424,6 +1425,7 @@ ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
+  padding-left: 0px;
 }
 .list-unstyled {
   padding-left: 0;
