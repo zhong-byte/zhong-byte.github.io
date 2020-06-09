@@ -1,0 +1,47 @@
+<h3>Motivations</h3>
+<ul>
+ 	<li>Probe-based traffic detection (e.g., GPS) has gained a great deal amount of attention for traffic monitoring on a real time basis</li>
+ 	<li>Typical GPS unit embedded in the on-board navigation system of a vehicle and mobile devices are mediocre with position error reaching up to 9 meters; the error even gets great in highly urbanized area (known as the urban-valley effect)</li>
+ 	<li>Bluetooth-based traffic detection technology can overcome the inadequacy of GPS-probe traffic monitoring in urban area, as the technology has become more mature.</li>
+</ul>
+<h3>Research Objectives</h3>
+<ul>
+ 	<li>To develop a low-cost, energy-efficient traffic monitoring system that is particularly suitable for being use in highly urbanized area without investing new communication infrastructure</li>
+</ul>
+<img class="  wp-image-242 aligncenter" src="architecture.png" alt="architecture" width="599" height="400" />
+<h3>Research Approach</h3>
+<ul>
+ 	<li>A wireless mesh sensor network can be formed by using low-energy Bluetooth modules and a Zigbee transceiver to capture high quality GPS-free traffic data.
+<ul>
+ 	<li>A mini PC (i.e. Raspberry Pi) is used to operate the Bluetooth readers and Zigbee transceiver.</li>
+ 	<li>The interfacing program is executed by the mini PC  for data exchanging between the Bluetooth readers and the Zigbee sensor</li>
+ 	<li>Data captured is storage to the on-board micro SD card as backup</li>
+</ul>
+</li>
+</ul>
+<img class="  wp-image-242 aligncenter" src="sensor-prototype.jpg" alt="architecture" width="599" height="400" />
+<img class="  wp-image-242 aligncenter" src="sensor-unit-component.png" alt="architecture" width="599" height="400" />
+<ul>
+ 	<li>A dual-scanner (Class II Bluetooth with 3-meter range) configuration was adapted. It effectively reduce the scanning interval, make it able to capture a vehicle speed up to 102 km/h, compared to 51 km/h with sole-scanner configuration.</li>
+</ul>
+<img class=" size-full wp-image-243 aligncenter" src="bt-scanning-coverage.png" alt="BT scanning coverage" width="601" height="487" />
+<ul>
+ 	<li>Zigbee transceiver performs three different roles: a coordinator, a router, and an end node.
+<ul>
+ 	<li>coordinator Zigbee: an access point that received all incoming data packet  from  router and end not Zigbee</li>
+ 	<li>router Zigbee: perform transmitter and receiver roles from adjacent nodes</li>
+</ul>
+</li>
+</ul>
+<img class=" size-full wp-image-246 aligncenter" src="topology.png" alt="topology" width="743" height="254" />
+<ul>
+ 	<li>A proof-of-concept test was conducted on NJIT campus during pm-peak hours from 4:00 to 6:00</li>
+</ul>
+<img class="  wp-image-242 aligncenter" src="poc-test.png" alt="architecture" width="599" height="400" />
+<img class="  wp-image-242 aligncenter" src="sensor-prototype.jpg" alt="architecture" width="599" height="400" />
+<img class="  wp-image-242 aligncenter" src="picture7.png" alt="architecture" width="599" height="400" />
+<img class="  wp-image-242 aligncenter" src="picture8.png" alt="architecture" width="599" height="400" />
+<h3>References</h3>
+<ol>
+ 	<li>J. Lee, Z. Zhong, B. Du, S. Gutesa, and K. Kim, “<a title="Low-Cost and Energy-Saving Wireless Sensor Network for Real-Time Urban Mobility Monitoring System" href="low-cost-and-energy-saving-wireless-sensor-network-for-real-time-urban-mobility-monitoring-system.pdf"><strong>Low-cost and energy-saving wireless sensor network for real-time urban mobility monitoring system</strong></a>,” J. Sensors, vol. 2015, pp. 1–8, 2015.</li>
+</ol>
